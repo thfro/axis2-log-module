@@ -1,0 +1,25 @@
+<module name="soap-logger" class="......TODO......">
+  <InFlow>
+    <handler name="InFlowLogHandler" class="......TODO......">
+      <order phase="PreDispatch" />
+    </handler>
+  </InFlow>
+
+  <OutFlow>
+    <handler name="OutFlowLogHandler" class="......TODO......">
+      <order phase="MessageOut"/>
+    </handler>
+  </OutFlow>
+
+  <InFaultFlow>
+    <handler name="FaultInFlowLogHandler" class="......TODO......">
+      <order phase="PreDispatch"/>
+    </handler>
+  </InFaultFlow>
+
+  <OutFaultFlow>
+    <handler name="FaultOutFlowLogHandler" class="......TODO......">
+      <order phase="MessageOut"/>
+    </handler>
+  </OutFaultFlow>
+</module>
