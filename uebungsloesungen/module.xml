@@ -1,0 +1,25 @@
+<module name="soap-logger" class="nrw.it.axis2.logmodule.LogModule">
+  <InFlow>
+    <handler name="InFlowLogHandler" class="nrw.it.axis2.logmodule.LogHandler">
+      <order phase="PreDispatch" />
+    </handler>
+  </InFlow>
+
+  <OutFlow>
+    <handler name="OutFlowLogHandler" class="nrw.it.axis2.logmodule.LogHandler">
+      <order phase="MessageOut"/>
+    </handler>
+  </OutFlow>
+
+  <InFaultFlow>
+    <handler name="FaultInFlowLogHandler" class="nrw.it.axis2.logmodule.LogHandler">
+      <order phase="PreDispatch"/>
+    </handler>
+  </InFaultFlow>
+
+  <OutFaultFlow>
+    <handler name="FaultOutFlowLogHandler" class="nrw.it.axis2.logmodule.LogHandler">
+      <order phase="MessageOut"/>
+    </handler>
+  </OutFaultFlow>
+</module>
